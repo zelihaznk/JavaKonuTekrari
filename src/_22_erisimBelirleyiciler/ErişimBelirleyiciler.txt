@@ -1,0 +1,17 @@
+Erişim Belirleyiciler
+Nesne Yönelimli Programlamada erişim belirleyiciler ufak bir yere sahip
+olsalarda, hatta bir çok derste bahsi geçmesede bence önemli konulardan
+bir tanesidir. Java’da proje oluştururken paket mantıksal yapıları sınıf
+bazında ayırmanın yanı sıra paket yapısıyla da ayırmamız mümkündür.
+Java ile proje geliştirirken paket yapısı olmazsa olmaz denilebilir.
+Paket yapısı projenin geliştirildiği web sitesi veya firmanın domain
+adını içerecek şekilde tersten oluşturulur.
+Ne demek istediğimi aşağıdaki örnekte daha iyi anlayacaksınız.
+
+ Java’da erişim belirleyiciler 4 çeşittir;
+
+1-public
+2-protected
+3-private
+4-friendly(erişim belirleyici yok)
+

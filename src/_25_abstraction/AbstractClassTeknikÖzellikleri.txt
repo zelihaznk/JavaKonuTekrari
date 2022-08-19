@@ -1,0 +1,70 @@
+Abstract Class Teknik Özellikleri
+
+Abstract sınıfların teknik yapılarından bahsetmek gerekirse;
+
+1- Java’da Abstract sınıflar “abstract class” anahtar kelimeleri ile oluşturulur.
+
+AbstractClassDemo.javaJava
+public abstract class AbstractClassDemo {
+}
+
+
+2- Java’da bir sınıf abstract olarak tanımlandıysa, abstract bir metot içerir
+veya içermez.
+
+AbtractClassDemo.javaJava
+public abstract class AbstractClassDemo {
+
+    public abstract int calculateSum(int a, int b);
+
+    public double calculateDivide(int a, int b) {
+        double result = a/b;
+        System.out.println("Result: " + result);
+        return result;
+    }
+}
+
+
+3- Java’da bir sınıf içerisinde abstract metot varsa o sınıf abstract sınıf
+olmak zorundadır.
+
+4- Java’da tanımlanan abstract metotların gövdeleri olamaz
+(Gövdeden kasıt içinde işlem yapacak kodlar olmak zorundadır).
+
+5- Java’da tanımlanan abstract sınıfların içerisindeki abstract olmayan
+metotların gövdeleri olmalıdır.
+
+6- Java’da tanımlanan bir sınıf abstract bir sınıf tarafından genişletilirse
+(extend edilirse) abstract sınıfın tüm abstract metotlarını implement
+etmek yani kendi bünyesinde bu metotlara gövde oluşturmak zorundadır.
+Eğer bu metotlara sınıf içerisinde gövde yazılmayacaksa tanımlanan
+sınıfın yapısı abstract class olarak tanımlanmalıdır.
+
+AbstractClassDemo1.javaJava
+public class AbstractClassDemo1 extends AbstractClassDemo{
+    @Override
+    public int calculateSum(int a, int b) {
+        return 0;
+    }
+}
+
+
+AbstractClassDemo1.javaJava
+public abstract class AbstractClassDemo1 extends AbstractClassDemo{
+}
+
+
+Yukarıdaki iki kod örneği 49. madde de bahsedilen yapıya göre tanımlanmıştır
+ve hata vermezler.
+
+Sonuç
+Java Nesne Yönelimli Programlamanın önemli paydaşlarından biri olan
+Abstraction ile esnek ve rahatlıkla değiştirilebilir kodlar yazılabilir.
+Kod tekrarlarının önüne geçileceği için için ve her sınıfa özelleştirilmiş
+metotlar oluşturulabileceği için bakım kolay projeler ortaya çıkacaktır.
+
+Ayrıca biz 10’larca farklı class’ı tek bir abstract class’dan extend
+edebiliriz. Böylelikle şunu biliyoruz ki bu 10 farklı class içinde aynı
+method (yukarıdaki örnekte calculateSalary methodu ) override edildi ve
+biz bu methodu çağırabiliriz. Böylelikle Abstraction bize Object Orianted’ın
+olmazsa olmazı Polymorphism’i sağlamış oldu.
