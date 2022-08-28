@@ -1,0 +1,11 @@
+Sonuç
+Java Exception Handling kod geliştirme işlemlerinde büyük önem taşımaktadır.
+Hataları yakalamak veya hataları fırlatmak ile kod üzerinde kurulan kontrol
+mekanizmaları sonucunda, kullanıcının önüne onlarca belki de yüzlerce satır
+hata log u getirmek yerine bir tool box içerisinde işlemin başarısız olduğu
+belirtilebilir. Örneğin uygulamanın loglamasıyla ilgili bir hata oluştu,
+bu kullanıcıyı ilgilendiren bir durum değil, sistemin bu hata sebebiyle
+kullanıcı tarafına hata log u basması yerine bu hatayı bypass ederek sadece
+yazılımcının haberi olmasını sağlayarak çalışmasına devam edebilir.
+Bu gibi kritik durumların çözülmesi için geliştirdiğimiz kodlarda
+Java Exception Handling konusuna büyük önem verilmelidir.

@@ -1,0 +1,37 @@
+ //Java Inheritance
+
+        /*
+       Java Inheritance temel seviyede kodlama yaparken bile ihtiyaç
+       duyulan bir yapıdır. Bir çok projede farklı sınıflar birbirleriyle
+       aynı değişkenleri veya aynı metotları içerebilirler. Bu gibi
+       durumlarda aynı kodların tekrar tekrar yaratılmasını önlemek
+       için Java’da sınıflar birbirinden türeyebilirler.
+         */
+
+
+
+        Teorik olarak;
+
+        1- Subclass, paket yapısı farketmeksizin tüm protected ve public
+        üyeleri superclass’tan miras alabilir.
+
+        2- Miras alınan alanlar sınıf içerisindeki diğer üyelerin kullanıldığı
+        gibi direk olarak kullanılabilirler.
+
+        3- Superclass içerisindeki bir değişken ile aynı isimde bir değişken
+        subclass içerisinde üretildiğinde bu olay hiding(gizleme) olarak
+        adlandırılır. (önerilmez)
+
+        4- Superclass içerisindeki bir metot ile aynı isimde bir metot subclass
+        içerisinde üretildiğinde bu olay overriding olarak adlandırılır.
+
+        5- Superclass içerisindeki static bir metot ile aynı isimde bir static
+        metot subclass içerisinde üretildiğinde bu olay hiding olarak adlandırılır. (önerilmez)
+
+      Sonuç
+      Java Inheritance yapısından faydalanılarak kod tekrarının önlendiği,
+      temiz kodlar yazılabilir. Büyük projelerde bir çok sınıfta kullanılan
+      metotta bir dğeişiklik yapıldığında tek bir yerde değişikliği uygulama
+      çoğu zaman yeterli olacaktır. Bu şekilde Java’da önem arzeden bakımı
+      kolay, esnek ve geliştirmeye ve değiştirmeye açık kodlar yazmak daha
+      kolay hale gelecektir.
