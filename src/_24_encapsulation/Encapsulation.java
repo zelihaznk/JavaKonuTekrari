@@ -18,4 +18,5 @@ public class Encapsulation {
 
     Örneklerle devam edelim:
      */
+
 }
