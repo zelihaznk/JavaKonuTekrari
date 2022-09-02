@@ -1,0 +1,30 @@
+
+Oluşturacağım lisans anahtarı örneğini yaparken uyguladığım aşamalar şu şekildedir:
+
+#1 Öncelikle örneği oluştururken Collection başlığı altında, List kısmında
+bulunan ArrayList kavramını kullanmaya karar verdim. Bu işlem esnasında
+Non-Generic bir tanımlama gerçekleştirme kararı aldım
+(Generic kavramını anlatacağımız konumuzda değineceğiz bu kelimeye).
+
+#2 İşlemi nasıl gerçekleştireceğime karar verdikten sonra CreateCode isminde
+bir sınıf tanımlaması gerçekleştirerek içerisine Random sınıfını ve ArrayList
+kavramını kullanmak için gerekli yapıları import ederek tanımlama işlemini
+gerçekleştirdim.
+
+#3 Tanımlamaları gerçekleştirdikten sonra geriye String veri tipinde bir değer
+döndüren newCode isminde bir metot tanımlamasını yaptım.
+
+#4 Metot içerisinde Random sınıfını kullanarak elde ettiğim değerleri Ascii
+tablosuna göre karakterlere dönüştürerek oluşturduğum ArrayList üzerine
+atamasını gerçekleştirecek if-else kontrol yapısı inşa ettim.
+
+#5 İnşa ettiğim bu if-else kontrol yapısı içerisinde lisans anahtarının
+kaçıncı indisi olduğunu, dizi içerisinde bulunup bulunmadığını kontrol
+ettirerek eğer belirlediğim koşullar çerçevesine uyuyorsa diziye eklenmesini,
+uymuyorsa yeni bir değer üretildikten sonra eklenmesini isteyen bir sistem
+oluşturdum.
+
+#6 Atama işlemlerim bittikten sonra basit bir foreach tanımlaması yaparak
+oluşturduğum lisenceCode ismindeki değişkenime dizi elemanlarımı ve belirli
+aralıklarda “–” atamasını yapmak için döngü içerisinde if-else kontrol yapısı
+yazdım.
